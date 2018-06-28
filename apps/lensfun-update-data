@@ -91,7 +91,7 @@ class Location:
 def detect_local_database_versions():
     versions = {database_version}
     directories = set(glob.glob("/usr/share/lensfun/version_*") +
-                      glob.glob("/usr/local/share/lensfun/version_*") 
+                      glob.glob("/usr/local/share/lensfun/version_*")
     for directory in directories:
         if os.path.isdir(directory):
             try:
