@@ -113,7 +113,7 @@ def read_location(base_url):
     global at_least_one_responsive_location
     if base_url not in seen_urls and len(seen_urls) < 50:
         seen_urls.add(base_url)
-        print("Reading {} …".format(base_url + "versions.json"))
+        print("Reading {} ...".format(base_url + "versions.json"))
         try:
             response = urllib.request.urlopen(base_url + "versions.json")
         except (urllib.error.HTTPError, ValueError):
